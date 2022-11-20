@@ -1,0 +1,42 @@
+{
+  "revision_id": "7945d90d7511d38ce29ffa1613f396e0cf5394955e8e6607e68cc02227dfed0b",
+  "name": "assignmet-apache",
+  "run_list": [
+    "recipe[assignmet-apache::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "assignmet-apache": {
+      "version": "0.1.0",
+      "identifier": "e96b037221154d6f1396eaa9f70d3432e7b16359",
+      "dotted_decimal_identifier": "65701332117427533.31265261317912333.57393240171353",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "assignmet-apache",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "assignmet-apache (0.1.0)": [
+
+      ]
+    }
+  }
+}

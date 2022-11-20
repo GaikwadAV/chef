@@ -1,0 +1,105 @@
+{
+  "revision_id": "5fa7bacb2124cb91c7bd8a0f0ac68bd3942d453d9967c76ce3cf1d82263f8c2e",
+  "name": "assignment-mysql",
+  "run_list": [
+    "recipe[assignment-mysql::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apparmor": {
+      "version": "4.1.0",
+      "identifier": "fe69a72e846a592ea0595310129dacce3481c9a3",
+      "dotted_decimal_identifier": "71610810845391449.13124154434785949.190001644161443",
+      "cache_key": "apparmor-4.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apparmor/versions/4.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apparmor/versions/4.1.0/download",
+        "version": "4.1.0"
+      }
+    },
+    "assignment-mysql": {
+      "version": "0.1.0",
+      "identifier": "ea7544691c2f8abd21b73111e4bed838a40baa1a",
+      "dotted_decimal_identifier": "65994081231974282.53235841284302014.237737781996058",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    },
+    "line": {
+      "version": "4.5.2",
+      "identifier": "ca6fbb2c7fa28ca4951bfba4558a3ab7caf85d21",
+      "dotted_decimal_identifier": "56980794991682188.46325843599054218.64561058700577",
+      "cache_key": "line-4.5.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/line/versions/4.5.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/line/versions/4.5.2/download",
+        "version": "4.5.2"
+      }
+    },
+    "mysql": {
+      "version": "11.0.5",
+      "identifier": "c51aec0d110addbad4033b960ad980ad58d39e3d",
+      "dotted_decimal_identifier": "55480171545823965.52587456017861337.141482007961149",
+      "cache_key": "mysql-11.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mysql/versions/11.0.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mysql/versions/11.0.5/download",
+        "version": "11.0.5"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apparmor",
+        "= 4.1.0"
+      ],
+      [
+        "assignment-mysql",
+        ">= 0.0.0"
+      ],
+      [
+        "line",
+        "= 4.5.2"
+      ],
+      [
+        "mysql",
+        "= 11.0.5"
+      ]
+    ],
+    "dependencies": {
+      "apparmor (4.1.0)": [
+        [
+          "line",
+          ">= 0.0.0"
+        ]
+      ],
+      "assignment-mysql (0.1.0)": [
+        [
+          "mysql",
+          ">= 0.0.0"
+        ]
+      ],
+      "line (4.5.2)": [
+
+      ],
+      "mysql (11.0.5)": [
+        [
+          "apparmor",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}
